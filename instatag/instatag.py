@@ -58,7 +58,7 @@ def time_convert(input_data):
     input_hour=int(input_hour-input_day*24)
     return zero_insert(str(input_day))+" days, "+zero_insert(str(input_hour))+" hour, "+zero_insert(str(input_minute))+" minutes, "+zero_insert(str(input_sec))+" seconds"
 
-def get_html(url,max_delay=60):
+def get_html(url,max_delay=15):
     '''
     This function extract raw_html file
     :param url: url
@@ -125,6 +125,14 @@ def create_random_sleep(index=1,min_time=5,max_time=60):
     return time_sleep
 
 def post_list_gen(tag,index=0):
+    '''
+    This function extract instagram post_link
+    :param tag: hashtag
+    :param index: index for resume search
+    :type tag:str
+    :type index:int
+    :return: post links as a list
+    '''
     try:
         print("Page Extracting . . .")
         post_list = []
@@ -141,6 +149,14 @@ def post_list_gen(tag,index=0):
         return post_list
 
 def step_2_gen(name_list,tag):
+    '''
+    This function extract 2nd users (from 1st users follower and following list)
+    :param name_list: 1st users id
+    :param tag: hashtag
+    :type name:list
+    :type tag:str
+    :return: None
+    '''
     try:
         file=io.open("insta_data/users_2_"+tag+".txt","a",encoding="utf-8")
         user_list=[]
@@ -170,6 +186,12 @@ def step_2_gen(name_list,tag):
 
 
 def user_list_gen(tag):
+    '''
+    This function extract user_list for each tag in first step and then run step_2_gen for second users
+    :param tag: hastag
+    :type tag:str
+    :return: None
+    '''
     try:
         hash_list = post_list_gen(tag)
         file=io.open("insta_data/users_1_"+tag+".txt","a",encoding="utf-8")
@@ -198,9 +220,13 @@ def user_list_gen(tag):
         step_2_gen(user_list, tag)
 
 def get_tags():
+    '''
+    This function read tags from a comma seperated file (tags.tf)
+    :return: Tags as a list
+    '''
     try:
         if "tags.tf" in os.listdir():
-            file=open("tags.tf","r")
+            file=io.open("tags.tf","r",encoding="utf-8")
             contain=file.read()
             return contain.split(",")
         else:

@@ -1,5 +1,8 @@
+# -*- coding: utf-8 -*-
+
 from .instatag import *
 import time
+import os
 if __name__=="__main__":
     timer_1=time.perf_counter()
     if "insta_data" not in os.listdir():

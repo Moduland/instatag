@@ -1,5 +1,5 @@
 <div align="center">
-
+<img src="http://moduland.github.io/instatag/images/logo.jpg" height=240px width=320px>
 </div>
 
 ----------
@@ -24,13 +24,13 @@ By [Moduland Co](http://www.moduland.ir)
 ### Source Code
 - Download [Version 0.1](https://github.com/moduland/instatag/archive/v0.1.zip) or [Latest Source ](https://github.com/Moduland/instatag/archive/master.zip)
 
-- `python3 setup.py install`				
+- `python3 setup.py install` or `python2 setup.py install`				
 			
 
 ## Usage					
 
 - Enter tags in ```tags.tf``` (comma separated)
-- Run instatag (```python3 -m instatag```)
+- Run instatag ```python3 -m instatag``` or ```python -m instatag``` on Mac,Linux or Windows
 - Result in insta_data folder 												
 
 
