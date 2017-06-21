@@ -1,5 +1,5 @@
 <div align="center">
-<img src="http://moduland.github.io/instatag/images/logo.jpg">
+<img src="http://moduland.github.io/instatag/images/logo.jpg" height=240px width=320px>
 </div>
 
 ----------
