@@ -7,7 +7,7 @@
 
 # InstaTag
 	
-Extract Instagram Users from tags					
+Extract Instagram Users from tags (Public , without API and Login)			
 
 
 ----------
