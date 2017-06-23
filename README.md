@@ -24,7 +24,7 @@ By [Moduland Co](http://www.moduland.ir)
 ### Source Code
 - Download [Version 0.1](https://github.com/moduland/instatag/archive/v0.1.zip) or [Latest Source ](https://github.com/Moduland/instatag/archive/master.zip)
 
-- `python3 setup.py install` or `python2 setup.py install`				
+- `python3 setup.py install` or `python setup.py install`				
 			
 
 ## Usage					
