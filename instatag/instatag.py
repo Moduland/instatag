@@ -45,8 +45,8 @@ def zero_insert(input_string):
 def time_convert(input_data):
     '''
     This function convert input_sec  from sec to DD,HH,MM,SS Format
-    :param input_string: input time string  in sec
-    :type input_string:str
+    :param input_data: input time
+    :type input_data:int
     :return: converted time as string
     '''
     input_sec=input_data

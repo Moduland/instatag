@@ -1,10 +1,2 @@
-time
-socket
-io
-bs4
-random
-multiprocessing
-os
-sys
 requests
 
