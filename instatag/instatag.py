@@ -80,7 +80,7 @@ def get_html(url,max_delay=15):
         print("Error In Internet")
         pass
 
-def internet(host="8.8.8.8", port=53, timeout=10):
+def internet(host="8.8.8.8", port=53, timeout=50):
     """
     Check Internet Connections.
     :param  host: the host that check connection to
@@ -208,7 +208,7 @@ def user_list_gen(tag):
                 user=raw_file[index+13:index+length-1]
                 if user[-1]=='"':
                     user=user[:-1]
-                if len(user)<50 and user not in user_list:
+                if len(user)<50 and (user not in user_list):
                     user_list.append(user)
                     user = user.encode("utf-8")
                     file.write(str(user,encoding="utf-8")+"\n")
