@@ -19,6 +19,23 @@ By [Moduland Co](http://www.moduland.ir)
 	
 </hr>
 </hr>
+<div align="center">
+<table style="border:1px solid black">
+<tr>
+<th>Linux</th>
+<th>Windows</th>
+
+</tr>
+
+<tr>
+<td><a href="https://travis-ci.org/Moduland/instatag"><img src="https://travis-ci.org/Moduland/instatag.svg?branch=master"></a></td>
+<td> <a href="https://ci.appveyor.com/project/sepandhaghighi/instatag"><img src="https://ci.appveyor.com/api/projects/status/5u4afuaymspuep55?svg=true"></a>	</td>
+
+</tr>	
+
+</table>
+
+</div>
 
 ## Installation
 ### Source Code
