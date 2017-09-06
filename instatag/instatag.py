@@ -72,9 +72,6 @@ def get_html(url,max_delay=15):
         raw_html=new_session.get(url)
         new_session.close()
         raw_data=raw_html.text
-        if "No posts yet." in raw_data:
-            print("Invalid Tag")
-            sys.exit()
         return raw_data
     else:
         print("Error In Internet")
@@ -138,6 +135,9 @@ def post_list_gen(tag,index=0):
         post_list = []
         tag_url = tag_url_maker(tag)
         raw_file = get_html(tag_url)
+        if "No posts yet." in raw_data:
+            print("Invalid Tag")
+            sys.exit()
         while(index!=-1):
             index=raw_file.find('"code":',index+7,len(raw_file))
             length=raw_file[index:].find(',')
