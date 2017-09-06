@@ -135,7 +135,7 @@ def post_list_gen(tag,index=0):
         post_list = []
         tag_url = tag_url_maker(tag)
         raw_file = get_html(tag_url)
-        if "No posts yet." in raw_data:
+        if "No posts yet." in raw_file:
             print("Invalid Tag")
             sys.exit()
         while(index!=-1):
