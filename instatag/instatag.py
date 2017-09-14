@@ -228,7 +228,7 @@ def get_tags():
         if "tags.tf" in os.listdir():
             file=io.open("tags.tf","r",encoding="utf-8")
             contain=file.read()
-            return contain.split(",")
+            return contain.strip().split(",")
         else:
             print("No Tag")
             sys.exit()
