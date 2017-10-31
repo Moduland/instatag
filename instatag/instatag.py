@@ -6,7 +6,6 @@ import socket
 import io
 from bs4 import BeautifulSoup
 from random import randint
-import multiprocessing as mu
 import os
 import sys
 from art import *
@@ -84,7 +83,6 @@ def get_html(url,max_delay=15):
         return raw_data
     else:
         print("Error In Internet")
-        pass
 
 def internet(host="8.8.8.8", port=53, timeout=50):
     """
@@ -105,7 +103,7 @@ def internet(host="8.8.8.8", port=53, timeout=50):
         socket.setdefaulttimeout(timeout)
         socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect((host, port))
         return True
-    except Exception as ex:
+    except Exception:
         return False
 def create_random_sleep(index=1,min_time=5,max_time=60):
     '''
@@ -154,7 +152,7 @@ def post_list_gen(tag,index=0):
             if len(post)<50:
                 post_list.append(post)
         return post_list
-    except Exception as ex:
+    except Exception:
         return post_list
 
 def step_2_gen(name_list,tag):
@@ -243,7 +241,7 @@ def get_tags(filename="tags.tf"):
             print("[Error] Tag File Missed!")
             instatag_help()
             sys.exit()
-    except Exception as e:
+    except Exception:
         print("[Error] In Tags Read!")
         instatag_help()
         sys.exit()
