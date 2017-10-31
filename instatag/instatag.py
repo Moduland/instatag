@@ -235,7 +235,7 @@ def get_tags(filename="tags.tf"):
     :return: Tags as a list
     '''
     try:
-        if filename in os.listdir():
+        if filename in os.listdir(os.getcwd()):
             file=io.open(filename,"r",encoding="utf-8")
             contain=file.read()
             return contain.strip().split(",")
