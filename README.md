@@ -6,6 +6,8 @@
 
 ----------
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3c1e51c164ee4f9480e901f6f7199412)](https://www.codacy.com/app/sepand-haghighi/instatag?utm_source=github.com&utm_medium=referral&utm_content=Moduland/instatag&utm_campaign=badger)
+
 
 # InstaTag
 	
