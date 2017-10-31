@@ -70,7 +70,7 @@ By [Moduland Co](http://www.moduland.ir)
 - Result in `insta_data` folder 
 
 <div align="center">
-<a href="https://asciinema.org/a/x3F7tqE4n1DmrxOaxHvny5e3a" target="_blank"><img src="https://asciinema.org/a/x3F7tqE4n1DmrxOaxHvny5e3a.png" /></a>
+<a href="https://asciinema.org/a/145190" target="_blank"><img src="https://asciinema.org/a/145190.png" /></a>
 <p>Screen Record</p>
 </div>												
 
