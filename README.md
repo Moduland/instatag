@@ -45,7 +45,13 @@ By [Moduland Co](http://www.moduland.ir)
 ### Source Code
 - Download [Version 0.1](https://github.com/moduland/instatag/archive/v0.1.zip) or [Latest Source ](https://github.com/Moduland/instatag/archive/master.zip)
 
-- `python3 setup.py install` or `python setup.py install`				
+- `python3 setup.py install` or `python setup.py install`	
+
+### PyPI
+
+
+- Check [Python Packaging User Guide](https://packaging.python.org/installing/)     
+- `pip install instatag` or `pip3 install instatag` (Need root access)			
 			
 
 ## Usage					
@@ -53,7 +59,12 @@ By [Moduland Co](http://www.moduland.ir)
 - Manual Inputs : `python -m instatag input tag1,tag2,tag3,...`
 - File Input : `python -m instatag file tags.tf`
 - Default : `python -m instatag` (Search for `tags.tf` file in current word directory)
-- Result in `insta_data` folder 												
+- Result in `insta_data` folder 
+
+<div align="center">
+<a href="https://asciinema.org/a/x3F7tqE4n1DmrxOaxHvny5e3a" target="_blank"><img src="https://asciinema.org/a/x3F7tqE4n1DmrxOaxHvny5e3a.png" /></a>
+<p>Screen Record</p>
+</div>												
 
 
 ## Issues & Bug Reports			
