@@ -34,7 +34,9 @@ def print_line(number=30,char="-"):
     :return: None
     '''
     line=""
-    for i in range(number):
+    i=0
+    while(i<number):
+        i+=1
         line=line+char
     print(line)
 
