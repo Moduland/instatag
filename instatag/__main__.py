@@ -22,7 +22,7 @@ if __name__=="__main__":
             elif args[1].upper()=="FILE":
                 tag_list=get_tags(args[2])
     timer_1=time.time()
-    if "insta_data" not in os.listdir():
+    if "insta_data" not in os.listdir(os.getcwd()):
         os.mkdir("insta_data")
     if len(tag_list)==0:
         tag_list=get_tags()
