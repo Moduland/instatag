@@ -2,6 +2,7 @@
 '''
 >>> from instatag import *
 >>> tag_url_maker("test")
+>>> import multiprocessing as mu
 'http://www.instagram.com/explore/tags/test'
 >>> step_2_url_maker("test")
 'http://www.instagram.com/test/media/'
