@@ -2,6 +2,7 @@
 <img src="http://moduland.github.io/instatag/images/logo.png" height=180px width=180px>
 <br/>
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/built%20with-Python3-green.svg" alt="built with Python3" /></a>
+<a class="badge-align" href="https://www.codacy.com/app/sepand-haghighi/instatag?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Moduland/instatag&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/3c1e51c164ee4f9480e901f6f7199412"/></a>
 </div>
 
 ----------
