@@ -9,8 +9,17 @@ from random import randint
 import multiprocessing as mu
 import os
 import sys
+from art import *
 DEBUG=True
-
+VERSION="0.1"
+def instatag_help():
+    tprint("Instatag")
+    tprint("V"+VERSION)
+    print("Help : \n")
+    print("     - test --> (run tests)\n")
+    print("     - input tags -->  Example : 'python -m instatag input tag1,tag2,tag3'\n")
+    print("     - file filename  -->  Example : 'python -m instatag file file.tf\n")
+    print("     - <BLANK>  --> Example : 'python -m instatag  (Search for tags.tf file)")
 def tag_url_maker(tag):
     return "http://www.instagram.com/explore/tags/"+tag
 def post_url_maker(post_hash):
@@ -217,22 +226,25 @@ def user_list_gen(tag):
         file.close()
     except Exception as ex:
         print(str(ex))
+        instatag_help()
         step_2_gen(user_list, tag)
 
-def get_tags():
+def get_tags(filename="tags.tf"):
     '''
     This function read tags from a comma seperated file (tags.tf)
     :return: Tags as a list
     '''
     try:
-        if "tags.tf" in os.listdir():
-            file=io.open("tags.tf","r",encoding="utf-8")
+        if filename in os.listdir():
+            file=io.open(filename,"r",encoding="utf-8")
             contain=file.read()
             return contain.strip().split(",")
         else:
-            print("No Tag")
+            print("[Error] Tag File Missed!")
+            instatag_help()
             sys.exit()
     except Exception as e:
-        print("Error In Tags")
+        print("[Error] In Tags Read!")
+        instatag_help()
         sys.exit()
 

@@ -9,7 +9,13 @@ setup(
   author_email = 'info@moduland.ir',
   url = 'https://github.com/Moduland/instatag',
   download_url = 'https://github.com/Moduland/instatag/tarball/v0.1',
-  keywords = ['extract', 'scrap', 'instagram','python'],
+  keywords = ['extract', 'scrap', 'instagram','python','tags','users'],
+  install_requires=[
+	  'codecov',
+      'art',
+      'bs4',
+      'requests',
+      ],
   classifiers = [],
   license='MIT',
 )
