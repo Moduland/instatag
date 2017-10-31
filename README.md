@@ -46,9 +46,10 @@ By [Moduland Co](http://www.moduland.ir)
 
 ## Usage					
 
-- Enter tags in ```tags.tf``` (comma separated)
-- Run instatag ```python3 -m instatag``` or ```python -m instatag``` on Mac,Linux or Windows
-- Result in insta_data folder 												
+- Manual Inputs : `python -m instatag input tag1,tag2,tag3,...`
+- File Input : `python -m instatag file tags.tf`
+- Default : `python -m instatag` (Search for `tags.tf` file in current word directory)
+- Result in `insta_data` folder 												
 
 
 ## Issues & Bug Reports			
